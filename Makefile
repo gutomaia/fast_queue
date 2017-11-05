@@ -1,6 +1,6 @@
 NOSETEST_ARGS?=
 
-PROJECT_NAME=fast_queue
+PROJECT_NAME=Fast Queue
 PROJECT_TAG=fast_queue
 PYTHON_MODULES=fast_queue
 

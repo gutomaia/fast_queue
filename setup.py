@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
+import os
 from setuptools import setup, find_packages
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+with open(os.path.join(here, 'requirements.txt')) as f:
+    REQUIREMENTS = [line for line in iter(f) if not line.startswith('--')]
 
 
 setup(
@@ -9,6 +15,7 @@ setup(
     author="Gustavo Maia Neto (Guto Maia)",
     author_email="guto@guto.net",
     license="GPL3",
+    install_requires=REQUIREMENTS,
     packages=find_packages(exclude=["*.tests", "*.tests.*", "examples"]),
     classifiers=[
     ],

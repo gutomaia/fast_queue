@@ -26,5 +26,6 @@ setup(
     classifiers=[
         'License :: OSI Approved :: MIT License',
     ],
+    keywords='celery queue',
     url='http://github.com/gutomaia/fast_queue/',
 )

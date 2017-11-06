@@ -10,11 +10,14 @@ with open(os.path.join(here, 'VERSION.txt')) as f:
 with open(os.path.join(here, 'requirements.txt')) as f:
     REQUIREMENTS = [line for line in iter(f) if not line.startswith('--')]
 
+with open(os.path.join(here, 'README.rst')) as f:
+    LONG_DESCRIPTION = f.read()
 
 setup(
     name='fast_queue',
     version=VERSION,
     description='Simple Task Producer',
+    long_description=LONG_DESCRIPTION,
     author="Gustavo Maia Neto (Guto Maia)",
     author_email="guto@guto.net",
     license="MIT",

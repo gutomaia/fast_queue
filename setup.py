@@ -17,10 +17,11 @@ setup(
     description='Simple Task Producer',
     author="Gustavo Maia Neto (Guto Maia)",
     author_email="guto@guto.net",
-    license="GPL3",
+    license="MIT",
     install_requires=REQUIREMENTS,
     packages=find_packages(exclude=["*.tests", "*.tests.*", "examples"]),
     classifiers=[
+        'License :: OSI Approved :: MIT License',
     ],
     url='http://github.com/gutomaia/fast_queue/',
 )

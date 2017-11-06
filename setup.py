@@ -24,6 +24,8 @@ setup(
     install_requires=REQUIREMENTS,
     packages=find_packages(exclude=["*.tests", "*.tests.*", "examples"]),
     classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Programming Language :: Python :: 2.7',
         'License :: OSI Approved :: MIT License',
     ],
     keywords='celery queue',
